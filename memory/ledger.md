@@ -3,6 +3,7 @@
 Starting credit: $100.00
 Credit left (est): $98.50
 Credit expires: 2026-11-05
+Owner credit check: 2026-10-07
 
 Earnings (Stripe gross): $0.00
 Stripe available: $0.00

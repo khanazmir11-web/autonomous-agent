@@ -15,9 +15,9 @@ test("all required files exist", () => {
   for (const f of FILES) assert.ok(fs.existsSync(new URL(`../${f}`, import.meta.url)), `missing ${f}`);
 });
 
-test("constitution has 8 numbered rules", () => {
+test("constitution has 9 numbered rules", () => {
   const rules = read("CONSTITUTION.md").match(/^\d+\. /gm) ?? [];
-  assert.equal(rules.length, 8);
+  assert.equal(rules.length, 9);
 });
 
 test("AGENT.md references the scripts, the constitution and requests", () => {

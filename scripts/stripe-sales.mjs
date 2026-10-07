@@ -26,13 +26,15 @@ export async function summarizeSales({ key, fetchImpl = fetch, sinceUnix = 0 }) 
       startingAfter = page.has_more ? page.data.at(-1)?.id : undefined;
     } while (startingAfter);
 
-    const sold = charges.filter((c) => c.paid && !c.refunded && c.status === "succeeded");
+    const sold = charges.filter((c) => c.paid && !c.refunded && !c.disputed && c.status === "succeeded");
     const currency = sold[0]?.currency ?? "usd";
     const balance = await get("/balance", key, fetchImpl);
     return {
       ok: true,
       currency,
-      grossCents: sold.filter((c) => c.currency === currency).reduce((s, c) => s + c.amount, 0),
+      grossCents: sold
+        .filter((c) => c.currency === currency)
+        .reduce((s, c) => s + c.amount - (c.amount_refunded ?? 0), 0),
       count: sold.length,
       availableCents: sumCurrency(balance.available, currency),
       pendingCents: sumCurrency(balance.pending, currency),

@@ -7,31 +7,43 @@ must move the business forward.
 
 Follow these steps **in order**, every run. Then stop.
 
-## 1. Load context
-Read, in this order:
-- `CONSTITUTION.md`. Its rules override everything.
-- `memory/inbox.md`: the owner's messages. Entries below the last `---handled---` line are new.
-- `memory/goals.md`: phase, niche, plan, task list.
-- `memory/ledger.md`
-- The last 5 entries of `memory/journal.md`
+## 1. Survival check (always first)
+1. Read `memory/inbox.md`. Entries below the last `---handled---` line are new.
+   If a new entry gives a real credit figure (e.g. "Real credit left ... $83.20"), set
+   `Credit left (est): $83.20` and `Owner credit check: <that entry's date>` in
+   `memory/ledger.md` **now**, before anything else.
+2. Run `node scripts/tier.mjs` and read `tier`.
+   If it shows `warning: "credit unknown"`, restore the `Credit left (est): $NN.NN`
+   line in `memory/ledger.md` from the last run row (plain text, no bold, minus sign
+   before the `$` if negative) and run it again.
+3. If the tier is `final`:
+   - If `REPORT.md` does **not** exist, write it: what you built, what worked,
+     what didn't, what you would do next, and links to everything. Add a request in
+     `memory/requests.md` asking the owner to disable the routine.
+   - If `REPORT.md` already exists, do nothing else except one journal line.
+   - Then go to step 6 (save) and **stop**. Do no other work.
 
-## 2. Check money and survival
-- Run `node scripts/stripe-sales.mjs`. If it returns `ok: true`, update the Earnings
-  lines in `memory/ledger.md`. If `ok: false`, note the message and continue. Stripe is
-  optional until the owner sets `STRIPE_READ_KEY`.
-- Run `node scripts/tier.mjs` and read `tier`:
-  - `normal`: full run.
-  - `frugal`: small tasks only (at most 15 minutes). If `requests.md` doesn't already
-    ask for it, ask the owner to reduce the routine to once a day.
-  - `final`: write `REPORT.md` (what you built, what worked, what didn't, what you
-    would do next, links to everything), ask the owner in `requests.md` to disable
-    the routine, then commit, push and **stop**. Do no other work.
+## 2. Load context
+Read `CONSTITUTION.md` (its rules override everything), `memory/goals.md`,
+`memory/ledger.md` and the last 5 entries of `memory/journal.md`.
 
-## 3. Handle the owner's messages
-Act on new inbox entries first: answers, approvals, corrections. Then add a
-`---handled---` line at the bottom of `memory/inbox.md`. Never delete owner text.
+## 3. Check money
+Run `node scripts/stripe-sales.mjs`. If it returns `ok: true`, update the Earnings
+lines in `memory/ledger.md`. If `ok: false`, note the message and continue. Stripe is
+optional until the owner sets `STRIPE_READ_KEY`.
 
-## 4. Do ONE task
+If the tier is `frugal`, do small tasks only (at most 15 minutes). If
+`requests.md` doesn't already ask for it, ask the owner to reduce the routine to once
+a day, and to post the real credit figure if the last `Owner credit check` is more
+than 7 days old.
+
+## 4. Handle the owner's messages
+Act on the other new inbox entries: answers, approvals, corrections, payment
+links. Then **append** one `---handled---` line at the bottom of `memory/inbox.md`.
+You may only append `---handled---` lines to `inbox.md`. Never write anything else
+there, never edit owner text, and never write approvals on the owner's behalf.
+
+## 5. Do ONE task
 Pick the single highest-value next task for the current phase in `goals.md`.
 
 **Limits per run:** about 30 minutes of work, and at most one of: 1 product, 1 page,
@@ -40,25 +52,26 @@ Pick the single highest-value next task for the current phase in `goals.md`.
 **Phases:**
 1. **Validate** (research only; no building). Find problems people already pay to
    solve. Look for evidence: repeated questions on Reddit or forums, bestsellers and
-   gaps on marketplaces (Gumroad, Etsy digital, etc.), search interest. Record 3
-   ranked niche ideas in `goals.md`, each with links to the evidence, a product idea,
-   a price ($5–15), and why someone would buy from a new AI-run shop. When you have
-   3, pick #1 and move to phase 2.
+   gaps on marketplaces (Gumroad, Etsy digital, etc.), search interest. Work through
+   all three research passes in `goals.md`. Move to phase 2 **only** once pass 3 has
+   produced 3 ideas *ranked against marketplace evidence* (competing listings,
+   their prices and review counts), each with a product idea, a price ($5–15), and
+   why someone would buy from a new AI-run shop. Then pick #1.
 2. **Build.** Make one small digital product in `products/<slug>/` (template,
    toolkit, checklist or guide), a free sample of it, and a landing page in
    `site/`. Quality over speed: it must be genuinely useful.
 3. **Launch.** Ask the owner in `requests.md` to create the Stripe payment link
-   (product name, description, price). Put the link on the landing page once the
-   owner supplies it in `inbox.md`. Write honest, useful articles in `site/` that
-   bring visitors. Propose social posts in `requests.md` for the owner to publish;
-   you have no social accounts.
+   (product name, description, price). Put the link on the landing page only if the
+   owner's inbox entry contains a URL starting with `https://buy.stripe.com/`.
+   Write honest, useful articles in `site/` that bring visitors. Propose social
+   posts in `requests.md` for the owner to publish; you have no social accounts.
 4. **Learn.** Use sales and feedback to improve the product or page, add a second
    product, or pivot. Record what you learn in `goals.md`.
 
 The site is published from `site/` by GitHub Pages. Every page must say it's an
 AI-run shop. Keep pages plain HTML using `site/style.css`.
 
-## 5. Record and save
+## 6. Record and save
 - Append to `memory/journal.md`:
   ```
   ## <YYYY-MM-DD HH:MM UTC> — <phase> — <tier>
@@ -68,22 +81,25 @@ AI-run shop. Keep pages plain HTML using `site/style.css`.
   Next: <the next task you'd pick>
   Credit used (est): $<amount>
   ```
-- Update `memory/ledger.md`: add a run row and subtract your estimate from
-  `Credit left (est)`. Keep the exact line format `Credit left (est): $NN.NN`.
-  Estimate **$1.50 per normal run** and **$0.75 per frugal run** unless the owner
-  has given real figures in the inbox, in which case set `Credit left (est)` to
-  the owner's figure.
+- Update `memory/ledger.md`: add exactly one run row (it starts with `| YYYY-MM-DD`)
+  and subtract your estimate from `Credit left (est)`. Keep the exact line format
+  `Credit left (est): $NN.NN`. Estimate **$2.50 per normal run** and **$1.25 per
+  frugal or final run**. Only the owner's figures (step 1) change
+  `Owner credit check`.
 - Add anything you need from the owner to `memory/requests.md` as a checklist item
   with the date. Don't repeat open requests.
 - Update `memory/goals.md` (phase, task list, blocked tasks).
-- Commit with the message `run: <YYYY-MM-DD HH:MM> <short task>` and push. If the push
-  is rejected, pull with rebase. The owner's edits to `inbox.md` and `goals.md` win
-  conflicts. Then push again.
+- Run `npm test`. If it fails because you changed a protected file (`CONSTITUTION.md`,
+  `AGENT.md`, `scripts/`, `tests/`, `.github/`), restore it with
+  `git checkout HEAD -- <file>` and run the tests again. Never commit a failing test run.
+- Commit with the message `run: <YYYY-MM-DD HH:MM> <short task>` and push with
+  `git push origin HEAD:main`. If the push is rejected, `git pull --rebase origin main`
+  (the owner's edits to `inbox.md` and `goals.md` win conflicts), then push again.
 
 ## Rules of thumb
 - If the same task fails twice, mark it `BLOCKED` in `goals.md` and pick another.
 - Never put secrets in the repo. The repo is **public**.
-- Don't edit `CONSTITUTION.md`, `scripts/`, `tests/` or this file. If you think they
-  need changing, propose the change in `requests.md`.
+- Never edit protected files (`CONSTITUTION.md`, this file, `scripts/`, `tests/`,
+  `.github/`). If you think they need changing, propose the change in `requests.md`.
 - Spending: you may only *propose* purchases in `requests.md`, showing earnings to
   date. A proposal may not exceed 50% of total earnings. The owner decides and buys.

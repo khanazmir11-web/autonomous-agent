@@ -91,3 +91,16 @@ test("sends the key as a Bearer token and filters by sinceUnix", async () => {
   assert.ok(seen.every((s) => s.auth === "Bearer rk_test_abc"));
   assert.match(seen[0].url, /created%5Bgte%5D=1700000000|created\[gte\]=1700000000/);
 });
+
+test("partial refunds count net, disputed charges are excluded", async () => {
+  const { fetchImpl } = fakeStripe({
+    pages: [{ has_more: false, data: [
+      charge(1500, { amount_refunded: 1400 }),
+      charge(900, { disputed: true }),
+      charge(1000),
+    ] }],
+  });
+  const r = await summarizeSales({ key: "rk_test", fetchImpl });
+  assert.equal(r.grossCents, 100 + 1000);
+  assert.equal(r.count, 2);
+});
