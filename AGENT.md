@@ -28,9 +28,10 @@ Read `CONSTITUTION.md` (its rules override everything), `memory/goals.md`,
 `memory/ledger.md` and the last 5 entries of `memory/journal.md`.
 
 ## 3. Check money
-Run `node scripts/stripe-sales.mjs`. If it returns `ok: true`, update the Earnings
-lines in `memory/ledger.md`. If `ok: false`, note the message and continue. Stripe is
-optional until the owner sets `STRIPE_READ_KEY`.
+Products sell on Payhip, and the money goes straight to the owner's PayPal. You can't
+see either. The owner reports sales in the inbox (e.g. "Payhip sales: 3, $18.00 total").
+Copy the latest owner figures into the Earnings lines of `memory/ledger.md`. If
+there are none yet, keep $0.00.
 
 If the tier is `frugal`, do small tasks only (at most 15 minutes). If
 `requests.md` doesn't already ask for it, ask the owner to reduce the routine to once
@@ -57,14 +58,22 @@ Pick the single highest-value next task for the current phase in `goals.md`.
    produced 3 ideas *ranked against marketplace evidence* (competing listings,
    their prices and review counts), each with a product idea, a price ($5–15), and
    why someone would buy from a new AI-run shop. Then pick #1.
-2. **Build.** Make one small digital product in `products/<slug>/` (template,
-   toolkit, checklist or guide), a free sample of it, and a landing page in
-   `site/`. Quality over speed: it must be genuinely useful.
-3. **Launch.** Ask the owner in `requests.md` to create the Stripe payment link
-   (product name, description, price). Put the link on the landing page only if the
-   owner's inbox entry contains a URL starting with `https://buy.stripe.com/`.
-   Write honest, useful articles in `site/` that bring visitors. Propose social
-   posts in `requests.md` for the owner to publish; you have no social accounts.
+2. **Build.** Make one small digital product (template, toolkit, checklist or
+   guide). **The paid files go only in the private `autonomous-agent-products` repo**,
+   which is checked out next to this one (find it with `ls ..`), under `<slug>/`.
+   Commit and push there with `git -C ../autonomous-agent-products push origin HEAD:main`.
+   **Never put paid product files in this public repo**: anyone could download them for
+   free. Only a free sample (a small, genuinely useful part) and the landing page go
+   in `site/`. Quality over speed: it must be genuinely useful.
+   If the private repo isn't checked out, don't build; ask in `requests.md`.
+3. **Launch.** The owner sells on Payhip (paid straight to PayPal; Payhip delivers
+   the file to buyers automatically). Write a ready-to-copy upload checklist in
+   `requests.md`: the file path in `autonomous-agent-products`, the product title, a
+   description (honest, says it's AI-made), the price in USD, and a short cover-image
+   idea. Put the buy link on the landing page only if the owner's inbox entry
+   contains a URL starting with `https://payhip.com/`. Write honest, useful articles in
+   `site/` that bring visitors. Propose social posts in `requests.md` for the owner
+   to publish; you have no social accounts.
 4. **Learn.** Use sales and feedback to improve the product or page, add a second
    product, or pivot. Record what you learn in `goals.md`.
 

@@ -20,9 +20,9 @@ test("constitution has 9 numbered rules", () => {
   assert.equal(rules.length, 9);
 });
 
-test("AGENT.md references the scripts, the constitution and requests", () => {
+test("AGENT.md references the scripts, the constitution, requests, Payhip and the private repo", () => {
   const agent = read("AGENT.md");
-  for (const s of ["scripts/tier.mjs", "scripts/stripe-sales.mjs", "CONSTITUTION.md", "requests.md"]) {
+  for (const s of ["scripts/tier.mjs", "CONSTITUTION.md", "requests.md", "https://payhip.com/", "autonomous-agent-products"]) {
     assert.ok(agent.includes(s), `AGENT.md must mention ${s}`);
   }
 });
@@ -36,4 +36,15 @@ test("ledger has a parseable credit line between $0 and $100", () => {
 
 test("site discloses it is AI-run", () => {
   assert.match(read("site/index.html"), /AI/);
+});
+
+test("paid product files never live in the public repo", () => {
+  assert.ok(!fs.existsSync(new URL("../products", import.meta.url)), "products/ belongs in the private autonomous-agent-products repo");
+  const ignored = read(".gitignore").split("\n").map((l) => l.trim());
+  assert.ok(ignored.includes("products/"), ".gitignore must list products/");
+});
+
+test("Stripe is no longer used", () => {
+  assert.ok(!fs.existsSync(new URL("../scripts/stripe-sales.mjs", import.meta.url)));
+  assert.doesNotMatch(read("AGENT.md"), /stripe/i);
 });

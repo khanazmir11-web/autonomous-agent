@@ -5,10 +5,9 @@ Credit left (est): $96.00
 Credit expires: 2026-11-05
 Owner credit check: 2026-10-07
 
-Earnings (Stripe gross): $0.00
-Stripe available: $0.00
-Stripe pending: $0.00
+Earnings (Payhip, owner-reported): $0.00
 Sales count: 0
+Last owner sales report: none
 
 ## Runs
 | Date (UTC) | Tier | Task | Credit used (est) | Credit left (est) |

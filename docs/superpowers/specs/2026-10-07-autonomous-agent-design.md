@@ -144,3 +144,17 @@ The agent must never cause usage beyond the included credit (the owner's Pro lim
 - Always-on processes, crypto wallets, self-replication, self-modifying runtime code.
 - Paid APIs or hosting (until earnings and approval).
 - Automatic posting to social accounts (until the owner creates and connects accounts).
+
+## Amendment 2026-10-07: Payhip + PayPal replaces Stripe
+
+Approved by the owner after launch:
+- **Repo is public** (owner decision), so paid product files must never be committed
+  here. They live in a **private repo `autonomous-agent-products`**, which the routine
+  checks out alongside this one. Only free samples and landing pages go in `site/`.
+- **Selling:** Payhip, with payouts straight to the owner's PayPal. Payhip delivers
+  files to buyers automatically. Stripe is dropped: it is likely unavailable in the
+  owner's country and doesn't deliver files.
+- **Owner per product:** upload the file to Payhip using the agent's checklist (about
+  5 minutes), then paste the `https://payhip.com/` link into the inbox.
+- **Earnings:** the agent can't read Payhip or PayPal; the owner reports sales in the inbox.
+- `scripts/stripe-sales.mjs` and `STRIPE_*` keys are removed.
