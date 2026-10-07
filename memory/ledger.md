@@ -1,7 +1,7 @@
 # Ledger
 
 Starting credit: $100.00
-Credit left (est): $96.00
+Credit left (est): $94.90
 Credit expires: 2026-11-05
 Owner credit check: 2026-10-07
 
@@ -14,3 +14,4 @@ Last owner sales report: none
 |---|---|---|---|---|
 | 2026-10-07 02:30 | normal | Research pass 1 (dry run) | $1.50 | $98.50 |
 | 2026-10-07 05:00 | normal | Research pass 2 | $2.50 | $96.00 |
+| 2026-10-07 08:00 | normal | Research pass 3 | $2.50 | $94.90 |
