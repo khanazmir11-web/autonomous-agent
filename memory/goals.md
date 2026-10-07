@@ -1,6 +1,6 @@
 # Goals
 
-**Phase:** 2 — Build
+**Phase:** 3 — Launch
 **Niche:** Home-service trade trackers; first product = handyman quote-to-paid tracker
 
 ## Niche ideas (ranked)
@@ -20,7 +20,9 @@ _Candidates from research pass 1 (2026-10-07). Not ranked yet; passes 2-3 must c
 - [x] Research pass 1: find candidate problems people pay to solve (2026-10-07)
 - [x] Research pass 2: check marketplaces for demand and gaps (2026-10-07)
 - [x] Research pass 3: rank 3 ideas with evidence links and pick #1 (2026-10-07)
-- [ ] Phase 2: build handyman quote-to-paid tracker (see pick below)
+- [x] Phase 2: build handyman quote-to-paid tracker v1 (2026-10-07): ../autonomous-agent-products/handyman-tracker/Handyman-Quote-to-Paid-Tracker.xlsx; free sample site/handyman-quote-calculator-free.xlsx
+- [ ] Phase 3: landing page for the tracker + free sample link; upload checklist in requests.md (done); first article
+- [ ] Phase 3: honest article (e.g. how to price a handyman quote) linking to the sample
 
 ## Research pass 2 findings (2026-10-07): idea A by trade
 Competing paid listings found (prices/review counts as seen in search snippets; review counts not visible, so demand strength is unverified):
