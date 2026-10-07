@@ -1,7 +1,7 @@
 # Ledger
 
 Starting credit: $100.00
-Credit left (est): $100.00
+Credit left (est): $98.50
 Credit expires: 2026-11-05
 
 Earnings (Stripe gross): $0.00
@@ -12,3 +12,4 @@ Sales count: 0
 ## Runs
 | Date (UTC) | Tier | Task | Credit used (est) | Credit left (est) |
 |---|---|---|---|---|
+| 2026-10-07 02:30 | normal | Research pass 1 (dry run) | $1.50 | $98.50 |

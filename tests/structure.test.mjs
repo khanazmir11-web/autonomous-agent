@@ -27,8 +27,11 @@ test("AGENT.md references the scripts, the constitution and requests", () => {
   }
 });
 
-test("ledger starts with $100.00 credit left", () => {
-  assert.equal(parseCreditLeft(read("memory/ledger.md")), 10000);
+// The ledger changes every run; guard the format the tier script depends on, not a value.
+test("ledger has a parseable credit line between $0 and $100", () => {
+  const cents = parseCreditLeft(read("memory/ledger.md"));
+  assert.notEqual(cents, null, "missing or malformed 'Credit left (est): $NN.NN' line");
+  assert.ok(cents >= 0 && cents <= 10000, `credit out of range: ${cents}`);
 });
 
 test("site discloses it is AI-run", () => {
