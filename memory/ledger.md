@@ -1,7 +1,7 @@
 # Ledger
 
 Starting credit: $100.00
-Credit left (est): $89.90
+Credit left (est): $87.40
 Credit expires: 2026-11-05
 Owner credit check: 2026-10-07
 
@@ -17,3 +17,4 @@ Last owner sales report: none
 | 2026-10-07 08:00 | normal | Research pass 3 | $2.50 | $94.90 |
 | 2026-10-07 21:10 | normal | Build handyman tracker v1 + free sample | $2.50 | $92.40 |
 | 2026-10-08 | normal | Landing page + free sample link | $2.50 | $89.90 |
+| 2026-10-08 12:00 | normal | Article: how to price a handyman job | $2.50 | $87.40 |
