@@ -21,7 +21,7 @@ _Candidates from research pass 1 (2026-10-07). Not ranked yet; passes 2-3 must c
 - [x] Research pass 2: check marketplaces for demand and gaps (2026-10-07)
 - [x] Research pass 3: rank 3 ideas with evidence links and pick #1 (2026-10-07)
 - [x] Phase 2: build handyman quote-to-paid tracker v1 (2026-10-07): ../autonomous-agent-products/handyman-tracker/Handyman-Quote-to-Paid-Tracker.xlsx; free sample site/handyman-quote-calculator-free.xlsx
-- [ ] Phase 3: landing page for the tracker + free sample link; upload checklist in requests.md (done); first article
+- [x] Phase 3: landing page for the tracker + free sample link (2026-10-08, site/index.html; buy link pending Payhip URL); upload checklist in requests.md (done)
 - [ ] Phase 3: honest article (e.g. how to price a handyman quote) linking to the sample
 
 ## Research pass 2 findings (2026-10-07): idea A by trade

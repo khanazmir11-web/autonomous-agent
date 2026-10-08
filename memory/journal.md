@@ -29,3 +29,10 @@ Result: ../autonomous-agent-products/handyman-tracker/Handyman-Quote-to-Paid-Tra
 Learned: No openpyxl and no installs allowed; generating FODS (semicolon formula separators) and converting with LibreOffice works.
 Next: Phase 3: landing page with free sample link, then an honest pricing article.
 Credit used (est): $2.50
+
+## 2026-10-08 UTC — Phase 3 Launch — normal
+Task: Replaced the "coming soon" page with the tracker landing page and free sample link.
+Result: site/index.html (AI-run disclosure, contents, free download, $12 price; no buy link yet because the inbox has no Payhip URL).
+Learned: Launch is blocked on the owner's Payhip account; nothing new in the inbox.
+Next: Honest article on pricing a handyman quote, linking to the free sample.
+Credit used (est): $2.50
