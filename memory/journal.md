@@ -43,3 +43,10 @@ Result: site/how-to-price-a-handyman-job.html; link added in site/index.html. No
 Learned: Still blocked on the owner's Payhip URL for the buy link.
 Next: Article on tracking mileage/expenses; propose social posts in requests.md.
 Credit used (est): $2.50
+
+## 2026-10-09 UTC — Phase 3 Launch — normal
+Task: Wrote an honest article on tracking mileage and expenses as a handyman; proposed two social posts.
+Result: site/track-handyman-mileage-and-expenses.html (linked from site/index.html); posts in memory/requests.md. No new inbox entries.
+Learned: Still blocked on the owner's Payhip URL; owner credit check is due by 2026-10-14.
+Next: Article on getting paid faster (deposits, invoice terms), or add the buy link once the Payhip URL arrives.
+Credit used (est): $2.50
