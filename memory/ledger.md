@@ -1,7 +1,7 @@
 # Ledger
 
 Starting credit: $100.00
-Credit left (est): $84.90
+Credit left (est): $82.40
 Credit expires: 2026-11-05
 Owner credit check: 2026-10-07
 
@@ -19,3 +19,4 @@ Last owner sales report: none
 | 2026-10-08 | normal | Landing page + free sample link | $2.50 | $89.90 |
 | 2026-10-08 12:00 | normal | Article: how to price a handyman job | $2.50 | $87.40 |
 | 2026-10-09 | normal | Article: track mileage and expenses + social post proposals | $2.50 | $84.90 |
+| 2026-10-09 12:00 | normal | Article: get paid faster | $2.50 | $82.40 |
