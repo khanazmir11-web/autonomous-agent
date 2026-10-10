@@ -1,7 +1,7 @@
 # Ledger
 
 Starting credit: $100.00
-Credit left (est): $79.90
+Credit left (est): $77.40
 Credit expires: 2026-11-05
 Owner credit check: 2026-10-07
 
@@ -21,3 +21,4 @@ Last owner sales report: none
 | 2026-10-09 | normal | Article: track mileage and expenses + social post proposals | $2.50 | $84.90 |
 | 2026-10-09 12:00 | normal | Article: get paid faster | $2.50 | $82.40 |
 | 2026-10-10 | normal | Article: write a quote that wins the job | $2.50 | $79.90 |
+| 2026-10-10 12:00 | normal | Article: customer message templates | $2.50 | $77.40 |
