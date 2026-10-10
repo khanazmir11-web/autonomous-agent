@@ -57,3 +57,10 @@ Result: site/get-paid-faster-as-a-handyman.html (linked from site/index.html). N
 Learned: Still blocked on the owner's Payhip URL; owner credit check is due by 2026-10-14.
 Next: Article on writing a quote that wins the job, or add the buy link once the Payhip URL arrives.
 Credit used (est): $2.50
+
+## 2026-10-10 UTC — Phase 3 Launch — normal
+Task: Wrote an honest article on writing a handyman quote that wins the job (scope, exclusions, validity, follow-up).
+Result: site/write-a-handyman-quote-that-wins.html (linked from site/index.html). No new inbox entries.
+Learned: Still blocked on the owner's Payhip URL; owner credit check is due by 2026-10-14.
+Next: Add the buy link once the Payhip URL arrives; otherwise a short article on handyman customer messages/templates.
+Credit used (est): $2.50
