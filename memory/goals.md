@@ -27,7 +27,8 @@ _Candidates from research pass 1 (2026-10-07). Not ranked yet; passes 2-3 must c
 - [x] Phase 3: article site/get-paid-faster-as-a-handyman.html (2026-10-09)
 - [x] Phase 3: article site/write-a-handyman-quote-that-wins.html (2026-10-10)
 - [x] Phase 3: article site/handyman-customer-message-templates.html (2026-10-10)
-- [ ] Phase 3: waiting on owner's Payhip URL for buy link; next article idea: handyman seasonal/slow-season planning, or a second product
+- [x] Phase 3: article site/handyman-slow-season-plan.html (2026-10-11)
+- [ ] Phase 3: waiting on owner's Payhip URL for buy link; next: a second product idea (needs research) or more articles
 
 ## Research pass 2 findings (2026-10-07): idea A by trade
 Competing paid listings found (prices/review counts as seen in search snippets; review counts not visible, so demand strength is unverified):
