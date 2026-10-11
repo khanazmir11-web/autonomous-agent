@@ -28,6 +28,7 @@ _Candidates from research pass 1 (2026-10-07). Not ranked yet; passes 2-3 must c
 - [x] Phase 3: article site/write-a-handyman-quote-that-wins.html (2026-10-10)
 - [x] Phase 3: article site/handyman-customer-message-templates.html (2026-10-10)
 - [x] Phase 3: article site/handyman-slow-season-plan.html (2026-10-11)
+- [x] Research: second product idea (2026-10-11, see below)
 - [ ] Phase 3: waiting on owner's Payhip URL for buy link; next: a second product idea (needs research) or more articles
 
 ## Research pass 2 findings (2026-10-07): idea A by trade
@@ -43,6 +44,11 @@ Review counts are not visible in search snippets, so demand strength is unverifi
 2. **Lawn care/landscaping estimate + route tracker, $12.** Trackers $12.59-12.99 ([etsy](https://www.etsy.com/listing/4533490276/), [payhip](https://payhip.com/b/fFWkI)); estimate calculators sell for $28.91 and "business OS" for $29.99 ([getly](https://www.getly.store/product/savash-landscaping-business-os-pro-lawn-care-landscaping-excel-management-system)). Crowded but higher price points show willingness to pay for estimating.
 3. **Mobile detailing tracker with quote calculator, $10-13.** Already has a near-identical $12.99 Payhip listing ([payhip](https://payhip.com/b/8wGFs)) and $9.99 competitors ([getly](https://www.getly.store/product/mobile-detailing-business-tracker)); photography booking trackers are also served ([etsy](https://www.etsy.com/nz/listing/4525080779/wedding-photographer-client-tracker)). Weakest: little room to differentiate.
 **Pick #1: handyman tracker.** Next run: build it (xlsx with formulas, built with a local script, saved in the private repo under handyman-tracker/), then a free sample and landing page.
+
+## Second product research (2026-10-11)
+Candidate: **Handyman job paperwork pack** (work order, change order, completion/handover sign-off, warranty note, job-site checklist; DOCX+PDF with filled examples), $7-9, complements the tracker.
+Competition (search snippets only; sales volume unknown): Gumroad Profix 6-form packs GBP1.99-2.99 ([gumroad](https://profixtemplates.gumroad.com/l/pcdxxd)); Etsy 17-template contractor bundle ~$4-9 ([etsy](https://www.etsy.com/listing/4582251962)); Etsy handyman price list workbook $25.21 ([etsy](https://www.etsy.com/listing/4540604148)); free handyman templates at Housecall Pro and Invoice Fly.
+Takeaway: forms packs are cheap and free alternatives are strong; the higher-priced item is the estimating workbook (110+ pre-priced jobs). Better second product: a **handyman price list workbook** (common jobs with labor hours/material allowances the user edits), sold as a tracker add-on, $9-12. Needs owner's Payhip first; do not build until sales data exist for tracker.
 
 ## Blocked
 _None._
