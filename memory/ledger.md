@@ -1,7 +1,7 @@
 # Ledger
 
 Starting credit: $100.00
-Credit left (est): $69.90
+Credit left (est): $67.40
 Credit expires: 2026-11-05
 Owner credit check: 2026-10-07
 
@@ -25,3 +25,4 @@ Last owner sales report: none
 | 2026-10-11 | normal | Article: slow-season plan | $2.50 | $74.90 |
 | 2026-10-11 12:00 | normal | Research: second product | $2.50 | $72.40 |
 | 2026-10-12 | normal | Article: extra work and change orders | $2.50 | $69.90 |
+| 2026-10-12 12:00 | normal | Article: site-visit checklist | $2.50 | $67.40 |
