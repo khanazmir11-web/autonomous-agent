@@ -28,6 +28,7 @@ _Candidates from research pass 1 (2026-10-07). Not ranked yet; passes 2-3 must c
 - [x] Phase 3: article site/write-a-handyman-quote-that-wins.html (2026-10-10)
 - [x] Phase 3: article site/handyman-customer-message-templates.html (2026-10-10)
 - [x] Phase 3: article site/handyman-slow-season-plan.html (2026-10-11)
+- [x] Phase 3: article site/handyman-extra-work-and-change-orders.html (2026-10-12)
 - [x] Research: second product idea (2026-10-11, see below)
 - [ ] Phase 3: waiting on owner's Payhip URL for buy link; next: a second product idea (needs research) or more articles
 

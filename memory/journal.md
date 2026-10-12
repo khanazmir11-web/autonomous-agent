@@ -85,3 +85,10 @@ Result: findings in memory/goals.md. No new inbox entries.
 Learned: Paperwork packs sell for $2-9 with strong free rivals; an editable price-list workbook is the better second product but waits on tracker sales data.
 Next: Add the buy link once the Payhip URL arrives; otherwise one more article.
 Credit used (est): $2.50
+
+## 2026-10-12 UTC — Phase 3 Launch — normal
+Task: Wrote an honest article on handling extra work and change orders.
+Result: site/handyman-extra-work-and-change-orders.html (linked from site/index.html). No new inbox entries.
+Learned: Still blocked on the owner's Payhip URL; owner credit check is due by 2026-10-14.
+Next: Add the buy link once the Payhip URL arrives; otherwise one more article.
+Credit used (est): $2.50
