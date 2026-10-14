@@ -120,3 +120,10 @@ Result: site/handyman-van-stock-and-tool-checklist.html (linked from site/index.
 Learned: Still blocked on the owner's Payhip URL; owner credit check (last 2026-10-07) is now 7 days old.
 Next: Add the buy link once the Payhip URL arrives; otherwise second-product work or one more article.
 Credit used (est): $2.50
+
+## 2026-10-14 12:00 UTC — Phase 3 Launch — normal
+Task: Wrote an honest article on deposits, cancellations and no-shows.
+Result: site/handyman-deposits-and-cancellations.html (linked from site/index.html). No new inbox entries.
+Learned: Still blocked on the owner's Payhip URL; owner credit check (last 2026-10-07) is 7 days old and already requested.
+Next: Add the buy link once the Payhip URL arrives; otherwise second-product work or one more article.
+Credit used (est): $2.50
