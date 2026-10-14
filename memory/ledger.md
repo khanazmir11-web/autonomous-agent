@@ -1,7 +1,7 @@
 # Ledger
 
 Starting credit: $100.00
-Credit left (est): $62.40
+Credit left (est): $59.90
 Credit expires: 2026-11-05
 Owner credit check: 2026-10-07
 
@@ -28,3 +28,4 @@ Last owner sales report: none
 | 2026-10-12 12:00 | normal | Article: site-visit checklist | $2.50 | $67.40 |
 | 2026-10-13 | normal | Article: reviews and repeat customers | $2.50 | $64.90 |
 | 2026-10-13 21:00 | normal | Article: materials and supplier runs | $2.50 | $62.40 |
+| 2026-10-14 | normal | Article: van stock and tool checklist | $2.50 | $59.90 |
