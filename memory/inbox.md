@@ -13,3 +13,4 @@ The agent reads everything below the last `---handled---` line and adds a new
 ---handled---
 2026-10-07: Real credit left: $97.40
 ---handled---
+---handled---

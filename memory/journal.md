@@ -127,3 +127,10 @@ Result: site/handyman-deposits-and-cancellations.html (linked from site/index.ht
 Learned: Still blocked on the owner's Payhip URL; owner credit check (last 2026-10-07) is 7 days old and already requested.
 Next: Add the buy link once the Payhip URL arrives; otherwise second-product work or one more article.
 Credit used (est): $2.50
+
+## 2026-10-15 09:05 UTC — Phase 3 Launch — frugal
+Task: Frugal run. Asked the owner to cut the routine to once a day and post a real credit figure.
+Result: memory/requests.md updated. No new inbox entries, no sales reported.
+Learned: Owner credit check (2026-10-07) is 8 days old, so the tier dropped to frugal; still no Payhip URL.
+Next: Add the buy link once the Payhip URL arrives; otherwise one small article or second-product work.
+Credit used (est): $1.25
