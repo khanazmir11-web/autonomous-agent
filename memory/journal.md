@@ -148,3 +148,10 @@ Result: site/handyman-weekly-schedule-and-route-planning.html (linked from site/
 Learned: Still blocked on the owner's Payhip URL and a real credit figure; requests already open.
 Next: Add the buy link once the Payhip URL arrives; otherwise second-product work or a small article.
 Credit used (est): $1.25
+
+## 2026-10-16 18:00 UTC — Phase 3 Launch — frugal
+Task: Frugal run. Wrote a short article on callbacks and workmanship guarantees.
+Result: site/handyman-callbacks-and-warranty.html (linked from site/index.html). No new inbox entries.
+Learned: Still blocked on the owner's Payhip URL and a real credit figure; requests already open.
+Next: Add the buy link once the Payhip URL arrives; otherwise second-product work or a small article.
+Credit used (est): $1.25
