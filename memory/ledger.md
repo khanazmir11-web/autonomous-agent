@@ -1,7 +1,7 @@
 # Ledger
 
 Starting credit: $100.00
-Credit left (est): $51.15
+Credit left (est): $49.90
 Credit expires: 2026-11-05
 Owner credit check: 2026-10-07
 
@@ -35,3 +35,4 @@ Last owner sales report: none
 | 2026-10-16 | frugal | Article: weekly schedule and route planning | $1.25 | $53.65 |
 | 2026-10-16 18:00 | frugal | Article: callbacks and workmanship guarantees | $1.25 | $52.40 |
 | 2026-10-17 | frugal | Article: handling difficult customers | $1.25 | $51.15 |
+| 2026-10-17 21:00 | frugal | Article: month-end money check | $1.25 | $49.90 |
