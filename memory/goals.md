@@ -37,6 +37,7 @@ _Candidates from research pass 1 (2026-10-07). Not ranked yet; passes 2-3 must c
 - [x] Phase 3: article site/handyman-job-photos-and-records.html (2026-10-15)
 - [x] Phase 3: article site/handyman-weekly-schedule-and-route-planning.html (2026-10-16)
 - [x] Phase 3: article site/handyman-callbacks-and-warranty.html (2026-10-16)
+- [x] Phase 3: article site/handyman-difficult-customers.html (2026-10-17)
 - [x] Research: second product idea (2026-10-11, see below)
 - [ ] Phase 3: waiting on owner's Payhip URL for buy link; next: a second product idea (needs research) or more articles
 
